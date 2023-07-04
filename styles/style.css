@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-breeky-blue: rgb(0, 50, 98);
+  --clr-azure: rgb(0, 127, 255);
+  --clr-argentine-blue: #6cb4ee;
+  --clr-gray: #555555;
+  --clr-white: white;
+}
+
+html {
+  font-size: 18px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--clr-breeky-blue);
+  color: var(--clr-white);
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.movie-container {
+  font-size: 1.2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.heading {
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  font-weight: 900;
+}
+.main {
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.movie-picker {
+  font-weight: 600;
+}
+.type-movie {
+  width: 10rem;
+  height: 2rem;
+  font-size: 1.1rem;
+}
+.legend-container {
+  width: 22rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: var(--clr-azure);
+}
+.seat {
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: var(--clr-gray);
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+}
+.row .seat {
+  cursor: pointer;
+}
+.occupied {
+  background-color: var(--clr-white);
+}
+
+.selected {
+  background-color: var(--clr-argentine-blue);
+}
+.movie-status {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+.screen-container {
+  width: 22rem;
+  height: 6rem;
+  border: 1.5px solid var(--clr-white);
+  border-radius: 10px;
+  background-color: var(--clr-white);
+  padding: 15px;
+  box-shadow: inset 0 -3em 3em rgba(193, 189, 189, 0.5),
+    0.3em 0.3em 1em rgba(198, 197, 197, 0.5);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 0.5rem;
+}
+.seat-container {
+  width: 22rem;
+}
+.movie-price-container {
+  font-size: 1.2rem;
+}
+.seat-count,
+.total-price {
+  color: var(--clr-azure);
+}

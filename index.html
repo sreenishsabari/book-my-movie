@@ -8,35 +8,35 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <main class="main">
+    <div class="main">
       <h1 class="heading">Book Your Movie Tickets</h1>
       <div class="movie-container">
-        <label for="movie-price">Pick a Movie:</label>
-        <select name="movie-price" id="movie-price">
-          <option value="190">KGF CHAPTER 2</option>
-          <option value="250">LEO</option>
-          <option value="150">TAKKAR</option>
-          <option value="190">90 ML</option>
-          <option value="200">VARISU</option>
+        <label for="type-movie" class="movie-picker">Pick a Movie</label>
+        <select name="movie-price" id="type-movie" class="type-movie">
+          <option value="190">KGF CHAPTER 2 - 190</option>
+          <option value="250">LEO - 150</option>
+          <option value="150">TAKKAR - 150</option>
+          <option value="190">90 ML - 200</option>
+          <option value="200">VARISU - 150</option>
         </select>
       </div>
       <div class="legend-container">
-        <div>
+        <div class="movie-status">
           <div class="seat"></div>
-          <div class="legend-text">Availabel</div>
+          <div class="legend-text">Available</div>
         </div>
-        <div>
-          <div class="seat"></div>
+        <div class="movie-status">
+          <div class="seat selected"></div>
           <div class="legend-text">selected</div>
         </div>
-        <div>
-          <div class="seat"></div>
+        <div class="movie-status">
+          <div class="seat occupied"></div>
           <div class="legend-text">occupied</div>
         </div>
       </div>
       <div class="screen-container">
-        <div class="screen"></div>
-        <div class="seat-container">
+      </div>
+      <div class="seat-container">
           <div class="row">
             <div class="seat"></div>
             <div class="seat"></div>
@@ -98,11 +98,12 @@
             <div class="seat"></div>
           </div>
         </div>
-      </div>
+      <div class="movie-price-container">
       <p class="message">
-        You have selected <span class="count" id="count">0</span> for a total of
-        ₹<span class="total" id="total">2000</span>
+        You have selected <span class="seat-count" id="seat-count">0</span> for a total of
+        ₹<span class="total-price" id="total-price">0</span>
       </p>
+    </div>
     </main>
     <script src="./script.js"></script>
   </body>
